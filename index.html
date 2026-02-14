@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verify You're Human 💝</title>
+    <title>Verification Required!!! </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Crimson+Pro:wght@400;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -592,7 +592,7 @@
     <div id="letter-page" class="page">
         <div class="letter-container">
             <div class="letter-header">
-                <span class="celebration">🎉 💕 🎉</span>
+                <span class="celebration"></span>
                 <h1>You Said Yes!</h1>
             </div>
 
@@ -628,17 +628,19 @@
         // ============================================
         // CUSTOMIZE YOUR SINGLE CAPTCHA QUESTION HERE!
         // ============================================
-        
+
+        /*
         // OPTION 1: Using Emojis (current setup)
         const question = {
             text: "Select all images with <strong>things about me</strong>",
             images: ['🍕', '🍔', '🍜', '🍝', '🍣', '🌮', '🍰', '🥗', '🍱'],
             correct: [0, 3, 6] // Pizza (0), Pasta (3), Cake (6) - COUNT FROM 0!
         };
+        */
 
         // OPTION 2: Using Your Own Images
         // Uncomment this and comment out the emoji version above:
-        /*
+        
         const question = {
             text: "Select all images with <strong>pictures of us</strong>",
             images: [
@@ -655,7 +657,7 @@
             correct: [0, 2, 5],
             useImages: true
         };
-        */
+        
 
         let selectedBoxes = [];
         loadQuestion();
