@@ -762,6 +762,23 @@
                 }, i * 50);
             }
         }
+        document.addEventListener('click', function(e) {
+            const heart = document.createElement('div');
+            heart.textContent = '💕';
+            heart.style.position = 'fixed';
+            heart.style.left = e.clientX + 'px';
+            heart.style.top = e.clientY + 'px';
+            heart.style.fontSize = '25px';
+            heart.style.pointerEvents = 'none';
+            heart.style.transition = 'all 1.5s ease';
+            heart.style.zIndex = '9999';
+            document.body.appendChild(heart);
+        setTimeout(() => {
+            heart.style.opacity = '0';
+            heart.style.transform = 'translateY(-80px) scale(1.5)';
+        }, 10);
+        setTimeout(() => heart.remove(), 1500);
+        });
     </script>
 </body>
 </html>
