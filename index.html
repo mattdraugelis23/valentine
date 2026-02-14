@@ -356,9 +356,7 @@
         .pixel-no {
             background: var(--pixel-bg);
             color: var(--dark);
-            position: absolute;
-            left: initial;
-            top: initial;
+            position: relative;
         }
 
         .pixel-no:hover {
@@ -712,6 +710,8 @@
         function moveButton() {
             const button = document.getElementById('no-btn');
             const container = document.querySelector('.valentine-content');
+
+            button.style.position = 'absolute';
             
             const containerRect = container.getBoundingClientRect();
             const buttonRect = button.getBoundingClientRect();
